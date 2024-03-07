@@ -9,17 +9,17 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #000000; 
-  padding: 10px 30px; 
-  color: #fff; 
+  background-color: #000000;
+  padding: 10px 30px;
+  color: #fff;
 }
 
 .logo img {
-  width: 100px; 
+  width: 100px;
 }
 
 .navbar {
-  background-color:#f892f3;
+  background-color: #f892f3;
   overflow: hidden;
 }
 
@@ -34,7 +34,7 @@ header {
 }
 
 .navbar a {
-  color: aliceblue; 
+  color: aliceblue;
   text-decoration: none;
   padding: 24px;
   display: block;
@@ -42,16 +42,17 @@ header {
 }
 
 .navbar a:hover {
-  background-color: #000000; 
+  background-color: #000000;
 }
 
 main {
-  margin-top: 100px; 
+  margin-top: 100px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: calc(80vh - 100px); 
+  height: calc(60vh - 90px);
 }
+
 section {
   height: 500px;
   width: 500px;
@@ -97,3 +98,43 @@ img.centered-image {
   padding: 10px;
   text-align: center;
 }
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar li {
+    float: none;
+  }
+
+  .navbar a {
+    padding: 12px;
+  }
+
+  main {
+    margin-top: 60px;
+  }
+
+  section {
+    width: 90%;
+  }
+
+  img.centered-image {
+    margin-left: 0;
+  }
+}
+
